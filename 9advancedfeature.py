@@ -41,3 +41,48 @@ def remove_space(str):
 
 print('remove_space:', remove_space(strp))
 
+
+# 遍历迭代:Iteration
+# list遍历
+arr = ['a', 'b', 'c']
+for s in arr:
+    print('list:', s)
+
+# Str遍历
+for s in S:
+    print('str:', s)
+
+# dict遍历
+d = {'a': 1, 'b': 2, 'c': 3}
+for key in d:
+    print('key:', key)
+
+for value in d.values():
+    print('value:', value)
+
+for k,v in d.items():
+    item = {k:v}
+    print('item:', item)
+    print('k:', k)
+    print('v:', v)
+
+
+# 练习:使用迭代查找一个list中最小和最大值，并返回一个tuple：
+nums = [1, 2, 3, 6, 9, -1]
+# 简单
+nums1 = tuple(nums)
+max1 = max(nums1)
+min1 = min(nums1)
+print('max:', max1)
+print('min:', min1)
+# 遍历
+def findMinAndMax(L):
+    min = max = L[0]
+    for x in L:
+        if x < min:
+            min = x
+        if x > max:
+            max = x
+    return (min, max)
+
+print('findMinAndMax:', findMinAndMax(nums))
