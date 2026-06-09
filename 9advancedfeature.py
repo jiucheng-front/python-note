@@ -86,3 +86,17 @@ def findMinAndMax(L):
     return (min, max)
 
 print('findMinAndMax:', findMinAndMax(nums))
+
+
+### 列表生成式
+arr1 = list(range(1, 11))
+print('arr1:', arr1)
+
+arr2 = [x * x for x in range(1, 11)]
+print('arr2:', arr2)
+
+L1 = ['Hello', 'World', 18, 'Apple', None]
+L2 = [s.lower() for s in L1 if isinstance(s,str) == True]
+L3 = [s if isinstance(s,str) == True else s s.lower() for s in L1]
+print('L2:', L2)
+print('L3:', L3)
