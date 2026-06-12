@@ -98,3 +98,14 @@ print('arr2:', arr2)
 L1 = ['Hello', 'World', 18, 'Apple', None]
 L2 = [s.lower() for s in L1 if isinstance(s,str) == True]
 print('L2:', L2)
+
+### 生成器
+g = (x * x for x in range(10))
+print('g:', g)
+
+for n in g:
+    print('生成器_n:', n)
+
+
+
+
