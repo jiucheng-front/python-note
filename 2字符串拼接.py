@@ -30,5 +30,6 @@ def my_fun1():
     user_age = 18
     user_height = 1.65
     print(f"我是:{user_name},现在是:{user_age}岁,身高是:{user_height}")
+    print(f"格式化表达式1：{2 * 2}, 格式化表达式2: {type('字符串')}")
 
 my_fun1()
