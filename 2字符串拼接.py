@@ -18,3 +18,17 @@ def my_func():
     print("大家好，我是%s, 今年是%3d岁，身高是%.3f" % (user_name, user_age, user_height))
 
 my_func()
+
+
+"""
+快速拼接字符串
+fxx{变量} 原样输出
+"""
+
+def my_fun1():
+    user_name = "娃哈哈"
+    user_age = 18
+    user_height = 1.65
+    print(f"我是:{user_name},现在是:{user_age}岁,身高是:{user_height}")
+
+my_fun1()
