@@ -25,3 +25,9 @@ print(num2)
 # 函数也可以作为形式参数传递：前提内部有return
 num4 = my_div(my_mult(num1, 3), my_add(1, 2))
 print(num4)
+
+def say_hello():
+    print("hello")
+
+h1 = say_hello()
+print(h1, type(h1))
